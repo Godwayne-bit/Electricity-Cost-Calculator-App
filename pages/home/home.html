@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Electricity Cost Calculator App</h1>
+
+  <br />
+  <img src=>
+<ion-item>
+  <ion-label>Power Consumption:</ion-label>
+  <ion-input type="number" [(ngModel)]="height"></ion-input> 
+</ion-item>
+
+<ion-item>
+  <ion-label>Hours of Use:</ion-label>
+  <ion-input type="number" [(ngModel)]="weight"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Cost:</ion-label>
+  <ion-input type="number" [(ngModel)]="weight"></ion-input>
+</ion-item>
+
+<button ion-button color="secondary" (click)="calculateBMI()">CALCULATE</button>
+<ion-item *ngIf="bmi">
+  <h2>You BMI is: {{bmi}} <code> ({{bmiMessage}})</code></h2>
+  </ion-item>
